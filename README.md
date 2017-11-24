@@ -51,6 +51,7 @@ let apply fT xT = ask <| fun t ->
     f x
 
 let (<*>) = apply
+
 /// Combines three Feature values using a specified function.
 /// ('a -> 'b -> 'c -> 'd) -> Feature<'a> -> Feature<'b> -> Feature<'c> -> Feature<'d>
 let liftA3 f x y z = retn f <*> x <*> y <*> z
