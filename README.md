@@ -81,7 +81,7 @@ let example3 =
 ```
 
 The `dbCall` function is just a function I use to memorize. We send the `unit` value with it, so it only calls this function once.
-We also use the map function on a `Feature`:
+We also use the `map` function on a `Feature`:
 
 ```fsharp
 /// Allows to compose cross-world Feature functions.
